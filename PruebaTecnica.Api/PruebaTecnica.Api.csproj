@@ -15,6 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Responses\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="PruebaTecnica.Web\Properties\launchSettings.json" />

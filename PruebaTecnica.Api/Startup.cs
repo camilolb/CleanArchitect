@@ -13,10 +13,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Pruebatecnica.Infraestructura.Filters;
 using Pruebatecnica.Infraestructura.Repositories;
 using Pruebatecnica.Infrastructura.Data;
 using PruebaTecnica.Core.Interfaces;
+using PruebaTecnica.Core.Services;
 
 namespace PruebaTecnica.Api
 {
@@ -43,14 +43,17 @@ namespace PruebaTecnica.Api
                 options.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
             });
 
-            /*
-            services.AddMvc(options =>
-            {
-                options.Filters.Add<ValidationFilter>();
-            });*/
 
             // Inyección de dependencias
             services.AddTransient<IPostReposity, PostReposity>();
+            services.AddTransient<IPostService, PostService>();
+
+            services.AddTransient<IGenderService, GenderService>();
+            services.AddTransient<IGenderRepository, GenderRepository>();
+
+            services.AddTransient<ICountryRepository, CountryRepository>();
+            services.AddTransient<ICountryService, CountryService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

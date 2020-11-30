@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Pruebatecnica.Infrastructura.Data;
-using PruebaTecnica.Core.Entities;
-using PruebaTecnica.Core.Interfaces;
+﻿
 
 namespace Pruebatecnica.Infraestructura.Repositories
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Microsoft.EntityFrameworkCore;
+    using Pruebatecnica.Infrastructura.Data;
+    using PruebaTecnica.Core.Entities;
+    using PruebaTecnica.Core.Interfaces;
+
+
     public class PostReposity : IPostReposity
     {
 
@@ -42,8 +42,10 @@ namespace Pruebatecnica.Infraestructura.Repositories
         public async Task<bool> UpdatePost(Post post)
         {
             var currentPost = await GetPost(post.PostId);
-            currentPost = post;
 
+            currentPost.Description = post.Description;
+            currentPost.Image = post.Image;
+            
             int rowAfected = await _dbContext.SaveChangesAsync();
             return rowAfected > 0;
         }

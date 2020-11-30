@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using PruebaTecnica.Core.Entities;
+﻿
 
 namespace PruebaTecnica.Core.Interfaces
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using PruebaTecnica.Core.Entities;
+
     public interface IPostReposity
     {
-        public Task<IEnumerable<Post>> GetPosts();
-        public Task<Post> GetPost(int id);
-        public Task InsertPost(Post post);
-        public Task<bool> UpdatePost(Post post);
-        public Task<bool> DeletePost(int id);
-
+         Task<IEnumerable<Post>> GetPosts();
+         Task<Post> GetPost(int id);
+         Task InsertPost(Post post);
+         Task<bool> UpdatePost(Post post);
+         Task<bool> DeletePost(int id);
     }
 }

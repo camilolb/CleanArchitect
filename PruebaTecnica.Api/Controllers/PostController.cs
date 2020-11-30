@@ -1,14 +1,11 @@
 
 namespace PruebaTecnica.Api.Controllers
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
     using AutoMapper;
-    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
-    using Pruebatecnica.Infraestructura.Repositories;
+    using PruebaTecnica.Api.Responses;
     using PruebaTecnica.Core.DTOs;
     using PruebaTecnica.Core.Entities;
     using PruebaTecnica.Core.Interfaces;
@@ -17,12 +14,12 @@ namespace PruebaTecnica.Api.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
-        private readonly IPostReposity _postReposity;
+        private readonly IPostService _postService;
         private readonly IMapper _mapper;
 
-        public PostController(IPostReposity postReposity, IMapper mapper)
+        public PostController(IPostService postService, IMapper mapper)
         {
-            _postReposity = postReposity;
+            _postService = postService;
             _mapper = mapper;
         }
 
@@ -30,26 +27,30 @@ namespace PruebaTecnica.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPosts()
         {
-            var post = await _postReposity.GetPosts();
+            var post = await _postService.GetPosts();
             var postDto = _mapper.Map<IEnumerable<PostDto>>(post);
-            return Ok(postDto);
+            var response = new ApiResponse<IEnumerable<PostDto>>(postDto);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPost(int id)
         {
-            var post = await _postReposity.GetPost(id);
+            var post = await _postService.GetPost(id);
             var postDto = _mapper.Map<PostDto>(post);
-            return Ok(postDto);
+
+            var response = new ApiResponse<PostDto>(postDto);
+            return Ok(response);
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(PostDto postDto)
         {
             var post = _mapper.Map<Post>(postDto);
-            await _postReposity.InsertPost(post);
+            await _postService.InsertPost(post);
 
-            return Ok(postDto);
+            var response = new ApiResponse<PostDto>(postDto);
+            return Ok(response);
         }
 
         [HttpPut]
@@ -57,16 +58,19 @@ namespace PruebaTecnica.Api.Controllers
         {
             var post = _mapper.Map<Post>(postDto);
             post.PostId = id;
-            var result = await _postReposity.UpdatePost(post);
 
-            return Ok(result);
+            var result = await _postService.UpdatePost(post);
+            var response = new ApiResponse<bool>(result);
+
+            return Ok(response);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _postReposity.DeletePost(id);
-            return Ok(result);
+            var result = await _postService.DeletePost(id);
+            var response = new ApiResponse<bool>(result);
+            return Ok(response);
         }
 
     }

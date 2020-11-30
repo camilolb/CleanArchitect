@@ -9,6 +9,9 @@
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
+/Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/FluentValidation.dll
+/Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/FluentValidation.AspNetCore.dll
+/Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/FluentValidation.DependencyInjectionExtensions.dll
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.dll
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.Streams.dll
@@ -165,6 +168,7 @@
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.AssemblyInfoInputs.cache
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.AssemblyInfo.cs
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.csproj.CoreCompileInputs.cache
+/Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.RazorTargetAssemblyInfo.cache
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Api/obj/Debug/netcoreapp3.1/PruebaTecnica.Api.csproj.CopyComplete

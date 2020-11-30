@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{A3A13913-E558-40E0-8D30-3EF3B5A53B60}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PruebaTecnica.Core/Interfaces/IPostReposity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PruebaTecnica.Api/Controllers/GenderController.cs">
     <Files>
-      <File FileName="PruebaTecnica.Api/Controllers/PostController.cs" Line="59" Column="27" />
-      <File FileName="Pruebatecnica.Infraestructura/Repositories/PostReposity.cs" Line="13" Column="39" />
-      <File FileName="PruebaTecnica.Core/Interfaces/IPostReposity.cs" Line="13" Column="16" />
+      <File FileName="Pruebatecnica.Infraestructura/Data/DatabaseContext.cs" Line="24" Column="1" />
+      <File FileName="PruebaTecnica.Api/Startup.cs" Line="47" Column="16" />
+      <File FileName="Pruebatecnica.Infraestructura/Repositories/GenderRepository.cs" Line="49" Column="1" />
+      <File FileName="PruebaTecnica.Api/Controllers/GenderController.cs" Line="30" Column="10" />
+      <File FileName="PruebaTecnica.Api/Controllers/CountryController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +13,7 @@
           <Node name="PruebaTecnica" expanded="True">
             <Node name="1- Core" expanded="True">
               <Node name="PruebaTecnica.Core" expanded="True">
-                <Node name="Interfaces" expanded="True">
-                  <Node name="IPostReposity.cs" selected="True" />
-                </Node>
+                <Node name="Entities" expanded="True" />
               </Node>
             </Node>
             <Node name="2- Infraestructura" expanded="True">
@@ -23,7 +23,10 @@
             </Node>
             <Node name="3 - Api" expanded="True">
               <Node name="PruebaTecnica.Api" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="GenderController.cs" selected="True" />
+                </Node>
+                <Node name="Responses" expanded="True" />
               </Node>
             </Node>
           </Node>

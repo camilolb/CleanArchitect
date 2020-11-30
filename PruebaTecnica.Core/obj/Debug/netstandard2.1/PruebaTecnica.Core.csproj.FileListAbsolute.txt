@@ -6,3 +6,4 @@
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Core/obj/Debug/netstandard2.1/PruebaTecnica.Core.csproj.CoreCompileInputs.cache
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Core/obj/Debug/netstandard2.1/PruebaTecnica.Core.dll
 /Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Core/obj/Debug/netstandard2.1/PruebaTecnica.Core.pdb
+/Users/camilo/Desktop/Desarrollos/ArquitecturaLimpia/PruebaTecnica/PruebaTecnica.Core/obj/Debug/netstandard2.1/PruebaTecnica.Core.csprojAssemblyReference.cache

@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Pruebatecnica.Infraestructura.Data.Configuration;
-using PruebaTecnica.Core.Entities;
-using System.Reflection;
-
+﻿
 namespace Pruebatecnica.Infrastructura.Data
 {
+    using Microsoft.EntityFrameworkCore;
+    using Pruebatecnica.Infraestructura.Data.Configuration;
+    using PruebaTecnica.Core.Entities;
+    using System.Reflection;
+
     public partial class DatabaseContext : DbContext
     {
         public DatabaseContext()
@@ -17,6 +18,8 @@ namespace Pruebatecnica.Infrastructura.Data
         }
 
         public virtual DbSet<Post> Posts { get; set; }
+        public virtual DbSet<Gender> Gender { get; set; }
+        public virtual DbSet<Country> Country { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
